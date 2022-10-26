@@ -14,16 +14,11 @@ app.get('/course-api', (req, res) => {
     res.send(courseAPI)
 });
 
-
-
 app.get('/courses/:id', (req, res) => {
     const id = req.params.id;
     const selectedCourse = courseAPI.find(n => n.id === id);
     res.send(selectedCourse)
 });
-
-
-
 
 
 app.listen(port, () => {
