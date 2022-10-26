@@ -20,7 +20,6 @@ app.get('/courses/:id', (req, res) => {
     res.send(selectedCourse)
 });
 
-
 app.listen(port, () => {
     console.log('Course Server Running on port', port)
 });
